@@ -19,7 +19,6 @@ if zeros:
     ax.scatter(np.real(zeros), np.imag(zeros), s=150, marker='o', facecolors='none', edgecolors='blue', linewidth=2, label='Zeros')
 
 # --- Configurações Visuais do Gráfico ---
-# Adiciona um título
 ax.set_title('Diagrama de Pólos e Zeros para Y(s)', fontsize=16)
 
 # Adiciona rótulos aos eixos x (Real) e y (Imaginário)

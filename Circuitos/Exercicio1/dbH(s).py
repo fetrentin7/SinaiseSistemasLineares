@@ -58,5 +58,5 @@ ax2.set_ylabel('Fase (graus)')
 ax2.set_title('Análise da Fase')
 ax2.grid(True, which='both')
 ax2.legend()
-
+6
 plt.show()
