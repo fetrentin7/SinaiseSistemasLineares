@@ -59,10 +59,7 @@ ax1.set_ylabel('Magnitude (dB)')
 ax1.set_ylim(-80, 120)
 ax1.grid(which='both', linestyle='--')
 ax1.legend()
-# Descomente as linhas abaixo para ver as assíntotas de magnitude individuais
-# ax1.semilogx(w, g1_asymptote, 'r:', label='G1: Assíntota Numerador')
-# ax1.semilogx(w, g2_asymptote, 'g:', label='G2: Assíntota Pólo 1')
-# ax1.semilogx(w, g3_asymptote, 'purple', linestyle=':', label='G3: Assíntota Pólo 2')
+
 ax1.legend()
 
 # --- Plot de Fase ---

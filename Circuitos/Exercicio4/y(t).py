@@ -37,7 +37,7 @@ t_sim, y_sim_unit = signal.step(system, T=t_sim)
 # A entrada real era um degrau de 2, então multiplicamos a saída por 2.
 y_sim = 2 * y_sim_unit
 
-# 2. Cálculo da nossa solução analítica
+# 2. Cálculo da solução analítica
 # vo(t) = 2 - 0.2 * e^(-50t) * sin(998.75t)
 # Os valores 50 e 998.75 vêm dos polos p = -50 ± j998.75
 alpha = 50      # Termo de decaimento exponencial
