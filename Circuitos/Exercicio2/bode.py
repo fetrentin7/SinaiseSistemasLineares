@@ -5,7 +5,7 @@ from scipy import signal
 # 1. Definir os coeficientes da função de transferência H(s)
 # H(s) = 100 / (s^2 + 100s + 10^6)
 num = [100]
-den = [1, 100, 10**6]
+den = [1, 100, 10e6]
 system = signal.TransferFunction(num, den)
 
 # Frequência de canto e ganho DC
