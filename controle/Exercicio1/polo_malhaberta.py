@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # --- Definição dos Pólos e Zeros ---
-# Estes são os valores que calculamos para Y(s) = 4 / (s*(s+8))
+# Estes são os valores para Y(s) = 4 / (s*(s+8))
 poles = [0, -8]
 zeros = [] # Lista vazia porque não há zeros
 

@@ -12,7 +12,7 @@ C = 10e-6 # 10 microFarads (10 * 10^-6 F)
 
 # Coeficientes da função de transferência H(s)
 # H(s) = (s^2 + 1/LC) / (s^2 + (R/L)s + 1/LC)
-# Vamos calcular os coeficientes a partir dos componentes para garantir a precisão.
+# calcular os coeficientes a partir dos componentes para garantir a precisão.
 R_L = R / L               # 10 / 0.1 = 100
 one_over_LC = 1 / (L * C) # 1 / (0.1 * 10e-6) = 1,000,000
 
@@ -34,7 +34,7 @@ t_sim = np.linspace(0, 0.15, 2000)
 # A função 'step' calcula a resposta para um degrau de amplitude 1.
 t_sim, y_sim_unit = signal.step(system, T=t_sim)
 
-# A entrada real era um degrau de 2V, então multiplicamos a saída por 2.
+# A entrada real era um degrau de 2, então multiplicamos a saída por 2.
 y_sim = 2 * y_sim_unit
 
 # 2. Cálculo da nossa solução analítica
@@ -54,7 +54,7 @@ plt.figure(figsize=(12, 7))
 plt.plot(t_sim, y_sim, 'b-', linewidth=4, label='Resposta Simulada (da biblioteca SciPy)')
 
 # Plota a resposta analítica (linha vermelha, tracejada) para confirmar
-plt.plot(t_sim, y_analytical, 'r--', linewidth=2, label='Nossa Solução Analítica (Fórmula)')
+plt.plot(t_sim, y_analytical, 'r--', linewidth=2, label='Solução Analítica (Fórmula)')
 
 # ADICIONA A LINHA DE REFERÊNCIA HORIZONTAL EM 2V
 # Em preto e pontilhada, com zorder=0 para ficar no fundo
