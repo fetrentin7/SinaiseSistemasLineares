@@ -17,7 +17,7 @@ for C in C_values:
     plt.plot(t, y_t, label=f'C = {int(C*1e6)} μF')
 
 plt.plot(t, x_t, '--', label='Entrada x(t) = 2u(t)', color='gray')
-plt.title("Saída y(t) = 2e^(-t/RC) para diferentes valores de C (R = 1kΩ)")
+plt.title("Saída y(t) =2e^(-t/RC) para diferentes valores de C (R = 1kΩ)")
 plt.xlabel("Tempo (s)")
 plt.ylabel("Tensão (V)")
 plt.grid(True)
